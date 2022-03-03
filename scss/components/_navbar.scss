@@ -1,0 +1,45 @@
+@use "../mixins/mixins";
+
+header {
+    /* Header Layout */
+    display: flow-root;
+    padding: 0 10%;
+    height: 80px;
+
+    /* Design */
+    background-color: rgb(255, 248, 225);
+
+    /* Center nav ul */
+    text-align: center;
+
+    img {
+        /* Layout */
+        float: left;
+        padding: 1.95rem 0;
+    }
+    a{
+        /* General Mixin Styles */
+        @include mixins.linkstyle(black);
+    }
+    & > a {
+        /* Layout */
+        float: right;
+    }
+}
+
+nav {
+    /* Layout */
+    display: inline-block;
+    text-align: center;
+    
+    ul {
+        /* Layout */
+        display: inline-block;
+    }
+    li {
+        /* Layout */
+        float: left;
+        list-style: none;
+        margin: 0 0.5rem;
+    }
+}

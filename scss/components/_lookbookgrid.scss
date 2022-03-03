@@ -1,0 +1,33 @@
+.lookbook-grid {
+    /* Layout */
+    padding: 2vw;
+    text-align: center;
+
+    /* Design */
+    background-color: #fff8e1;
+
+    .lookbook-header {
+        /* Typography */
+        font-size: 2vw;
+
+        & > h2:nth-of-type(2) {
+            /* Typography */
+            font-weight: 700;
+        }
+    }
+    .lookbook-images {
+        /* Layout */
+        margin: 2rem auto;
+        width: 50%;
+        column-count: 3;
+        column-gap: 2rem;
+        & > img {
+            display: inline-block;
+            margin: 1rem 0;
+            width: 100%;
+        }
+        .gridimg5 {
+            filter: brightness(20%);
+        }
+    }
+}

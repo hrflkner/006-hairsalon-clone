@@ -1,0 +1,84 @@
+@use "../mixins/mixins";
+
+main {
+    display: flow-root;
+    clear: both;
+
+    /* General Typography */
+    font-family: 'Lora', sans-serif;
+
+    .headline {
+        /* Layout */
+        height: 100%;
+        padding: 16.5% 14.5% 0;
+
+        /* Typography */
+        background: url(../images/hero-image.jpg) no-repeat;
+        background-size: 100%;
+    }
+    h1 {
+        /* Typography */
+        color: snow;
+        font-size: 6.2vw;
+        font-weight: 400;
+        text-shadow: black -0.5rem 0.5rem;
+    }
+    .heading {
+        
+        span {
+            display: block;
+            padding: 3rem 0;
+            padding-left: 0.5vw;
+            color: white;
+            font-size: 1.2vw;
+        }
+        a {
+            /* General Mixin Styles */
+            @include mixins.linkstyle(white);
+
+            /* Design */
+            display: inline-block;
+            background-color: black;
+            border-radius: 5px;
+            margin: 0.5rem 0;
+            padding: 1vw;
+            margin-bottom: 4rem;
+        }
+    }
+    .coloring-offer {
+        /* Typography */
+        color: white;
+        font-size: 1vw;
+       
+
+        display: block;
+        width: 17vw;
+        min-width: 300px;
+        padding: 3rem 0 2rem;
+        background-color: black;
+
+        & > span {
+            display: inline-block;
+            border-left: 3px solid white;
+            padding: 2rem 3rem;
+        }
+        p {
+            font-size: 1vw;
+            padding: 0 2rem;
+            margin-left: 1rem;
+            line-height: 1.8;
+        }
+        .enlarged-promo {
+            font-size: 2.2vw;
+        }
+        a {
+            @include mixins.linkstyle(black);
+            display: inline-block;
+            background-color: white;
+            padding: 1.5rem 3rem;
+            margin: 3rem;
+        }
+    }
+
+
+}

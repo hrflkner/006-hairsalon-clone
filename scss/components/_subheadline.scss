@@ -1,0 +1,28 @@
+.sub-headline {
+    /* Layout */
+    display: flow-root;
+    text-align: center;
+
+    .sub-heading-block {
+        /* Layout */
+        display: inline-block;
+        max-width: 20vw;
+        padding: 8rem 4rem;
+
+        img {
+            /* Layout */
+            transform: translateX(-0.5rem);
+        }
+    }
+    h4 {
+        /* Typography */
+        font-size: 2rem;
+        font-weight: 700;
+        padding: 2rem 0;
+    }
+    p {
+        /* Typography */
+        font-size: 1.4rem;
+        line-height: 1.5;
+    }
+}

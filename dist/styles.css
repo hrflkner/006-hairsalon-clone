@@ -1,0 +1,448 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*-----------------------------------------*/
+/*--------------- End Reset ---------------*/
+/*-----------------------------------------*/
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+header {
+  /* Header Layout */
+  display: flow-root;
+  padding: 0 10%;
+  height: 80px;
+  /* Design */
+  background-color: #fff8e1;
+  /* Center nav ul */
+  text-align: center;
+}
+header img {
+  /* Layout */
+  float: left;
+  padding: 1.95rem 0;
+}
+header a {
+  /* General Mixin Styles */
+  /* Box Model Adjustments */
+  display: block;
+  margin: 1rem 0;
+  padding: 2.5rem 1rem;
+  height: 100%;
+  /* Typography */
+  color: black;
+  font-size: 1.4rem;
+  font-family: "Lora", cursive;
+  font-weight: bold;
+  text-decoration: none;
+}
+header > a {
+  /* Layout */
+  float: right;
+}
+
+nav {
+  /* Layout */
+  display: inline-block;
+  text-align: center;
+}
+nav ul {
+  /* Layout */
+  display: inline-block;
+}
+nav li {
+  /* Layout */
+  float: left;
+  list-style: none;
+  margin: 0 0.5rem;
+}
+
+main {
+  display: flow-root;
+  clear: both;
+  /* General Typography */
+  font-family: "Lora", sans-serif;
+}
+main .headline {
+  /* Layout */
+  height: 100%;
+  padding: 16.5% 14.5% 0;
+  /* Typography */
+  background: url(../images/hero-image.jpg) no-repeat;
+  background-size: 100%;
+}
+main h1 {
+  /* Typography */
+  color: snow;
+  font-size: 6.2vw;
+  font-weight: 400;
+  text-shadow: black -0.5rem 0.5rem;
+}
+main .heading span {
+  display: block;
+  padding: 3rem 0;
+  padding-left: 0.5vw;
+  color: white;
+  font-size: 1.2vw;
+}
+main .heading a {
+  /* General Mixin Styles */
+  /* Box Model Adjustments */
+  display: block;
+  margin: 1rem 0;
+  padding: 2.5rem 1rem;
+  height: 100%;
+  /* Typography */
+  color: white;
+  font-size: 1.4rem;
+  font-family: "Lora", cursive;
+  font-weight: bold;
+  text-decoration: none;
+  /* Design */
+  display: inline-block;
+  background-color: black;
+  border-radius: 5px;
+  margin: 0.5rem 0;
+  padding: 1vw;
+  margin-bottom: 4rem;
+}
+main .coloring-offer {
+  /* Typography */
+  color: white;
+  font-size: 1vw;
+  display: block;
+  width: 17vw;
+  min-width: 300px;
+  padding: 3rem 0 2rem;
+  background-color: black;
+}
+main .coloring-offer > span {
+  display: inline-block;
+  border-left: 3px solid white;
+  padding: 2rem 3rem;
+}
+main .coloring-offer p {
+  font-size: 1vw;
+  padding: 0 2rem;
+  margin-left: 1rem;
+  line-height: 1.8;
+}
+main .coloring-offer .enlarged-promo {
+  font-size: 2.2vw;
+}
+main .coloring-offer a {
+  /* Box Model Adjustments */
+  display: block;
+  margin: 1rem 0;
+  padding: 2.5rem 1rem;
+  height: 100%;
+  /* Typography */
+  color: black;
+  font-size: 1.4rem;
+  font-family: "Lora", cursive;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  background-color: white;
+  padding: 1.5rem 3rem;
+  margin: 3rem;
+}
+
+.sub-headline {
+  /* Layout */
+  display: flow-root;
+  text-align: center;
+}
+.sub-headline .sub-heading-block {
+  /* Layout */
+  display: inline-block;
+  max-width: 20vw;
+  padding: 8rem 4rem;
+}
+.sub-headline .sub-heading-block img {
+  /* Layout */
+  transform: translateX(-0.5rem);
+}
+.sub-headline h4 {
+  /* Typography */
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 2rem 0;
+}
+.sub-headline p {
+  /* Typography */
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+
+.about-video {
+  display: flow-root;
+  background-color: #fff8e1;
+  max-height: 50rem;
+  padding: 8rem 18vw 0;
+}
+.about-video .video-block {
+  float: left;
+  margin: 0 1vw;
+  width: 28vw;
+  height: auto;
+}
+.about-video .video-block:first-of-type {
+  margin-left: 3vw;
+}
+.about-video .video-block img:first-of-type {
+  width: 100%;
+  height: auto;
+}
+.about-video .video-block img:nth-of-type(2) {
+  width: 5vw;
+  height: auto;
+  transform: translate(11vw, -12vw);
+}
+.about-video .video-block h2 {
+  font-size: 2vw;
+  font-weight: 700;
+  line-height: 2.5vw;
+}
+.about-video .video-block h2:last-of-type {
+  padding-bottom: 1vw;
+}
+.about-video .video-block p {
+  font-size: 0.75vw;
+  line-height: 1.8vw;
+  max-width: 23vw;
+}
+.about-video .video-block a {
+  /* General Mixin Styles */
+  /* Box Model Adjustments */
+  display: block;
+  margin: 1rem 0;
+  padding: 2.5rem 1rem;
+  height: 100%;
+  /* Typography */
+  color: white;
+  font-size: 1.4rem;
+  font-family: "Lora", cursive;
+  font-weight: bold;
+  text-decoration: none;
+  /* Design */
+  display: inline-block;
+  background-color: black;
+  border-radius: 5px;
+  margin: 3rem 0;
+  padding: 1vw 3vw;
+}
+
+.our-stylists {
+  /* Layout */
+  display: flow-root;
+  text-align: center;
+}
+.our-stylists .our-stylist-block {
+  /* Layout */
+  display: inline-block;
+  max-width: 24vw;
+  padding: 8rem 4rem;
+}
+.our-stylists .our-stylist-block img {
+  /* Layout */
+  max-width: 100%;
+}
+.our-stylists .stylistinfo {
+  display: inline-block;
+  color: white;
+  background-color: black;
+  padding: 1.2rem 3vw;
+  transform: translateY(-3rem);
+}
+.our-stylists h4 {
+  /* Typography */
+  font-size: 0.8vw;
+  font-weight: 400;
+  padding-bottom: 0.75rem;
+}
+.our-stylists p {
+  /* Typography */
+  font-size: 0.6vw;
+}
+
+.discount-offering {
+  /* Layout */
+  margin: 0 auto;
+  padding: 4vw 0;
+  padding-left: 4vw;
+  /* Background Banner */
+  background-image: url(../images/Promo-Banner-Image.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 60vw;
+  height: 30vw;
+}
+.discount-offering .colour-background {
+  /* Typography */
+  color: black;
+  font-size: 1vw;
+  font-weight: 500;
+  display: inline-block;
+  width: 28vw;
+  min-width: 300px;
+  padding: 3rem 0 2rem;
+}
+.discount-offering .colour-background > span {
+  display: inline-block;
+  padding: 3rem 3rem 1rem;
+}
+.discount-offering .colour-background p {
+  font-size: 2vw;
+  padding: 0 2rem;
+  margin-left: 1rem;
+  line-height: 1.5;
+}
+.discount-offering .colour-background .enlarged-promo {
+  font-size: 2.5vw;
+  font-weight: 700;
+}
+.discount-offering .colour-background a {
+  /* Box Model Adjustments */
+  display: block;
+  margin: 1rem 0;
+  padding: 2.5rem 1rem;
+  height: 100%;
+  /* Typography */
+  color: white;
+  font-size: 1.4rem;
+  font-family: "Lora", cursive;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  background-color: black;
+  padding: 1.5rem 4rem;
+  margin: 3rem;
+}
+
+.lookbook-grid {
+  /* Layout */
+  padding: 2vw;
+  text-align: center;
+  /* Design */
+  background-color: #fff8e1;
+}
+.lookbook-grid .lookbook-header {
+  /* Typography */
+  font-size: 2vw;
+}
+.lookbook-grid .lookbook-header > h2:nth-of-type(2) {
+  /* Typography */
+  font-weight: 700;
+}
+.lookbook-grid .lookbook-images {
+  /* Layout */
+  margin: 2rem auto;
+  width: 50%;
+  -moz-column-count: 3;
+       column-count: 3;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+}
+.lookbook-grid .lookbook-images > img {
+  display: inline-block;
+  margin: 1rem 0;
+  width: 100%;
+}
+.lookbook-grid .lookbook-images .gridimg5 {
+  filter: brightness(20%);
+}
+
+footer {
+  /* Layout */
+  margin-top: -20rem;
+  clear: both;
+  background-color: black;
+  height: 15vw;
+  text-align: center;
+  padding: 7.2%;
+}
+footer h4 {
+  color: white;
+  font-size: 2rem;
+}
+
+/* CSS STYLE RESET
+---------------------------*/
+/* Box-Sizing & Rem-Sizing 
+---------------------------*/
+/* Header / Navigation Bar
+---------------------------*/
+/* Headline Block
+------------------*/
+/* Sub Headline (Quality & Service) 
+-----------------------------------*/
+/* Video Advertisement Block
+-----------------------------*/
+/* Stylist Block
+-----------------*/
+/* Colouring Offer Block
+-------------------------*/
+/* Lookbook Photo Grid
+-----------------------*/
+/* Footer
+----------*//*# sourceMappingURL=styles.css.map */

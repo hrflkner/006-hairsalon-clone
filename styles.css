@@ -1,0 +1,16 @@
+html {
+    font-size: 92.5%;
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+header {
+    padding: 0 2rem;
+}
+header > img {
+    float: left;
+}

@@ -1,0 +1,14 @@
+@mixin linkstyle($c) {
+    /* Box Model Adjustments */
+    display: block;
+    margin: 1rem 0;
+    padding: 2.5rem 1rem;
+    height: 100%;
+
+    /* Typography */
+    color: $c;
+    font-size: 1.4rem;
+    font-family:'Lora', cursive;
+    font-weight: bold;
+    text-decoration: none;
+}

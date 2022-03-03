@@ -1,0 +1,39 @@
+/* CSS STYLE RESET
+---------------------------*/
+@use "./lib/reset";
+
+/* Box-Sizing & Rem-Sizing 
+---------------------------*/
+@use "./lib/tools";
+
+/* Header / Navigation Bar
+---------------------------*/
+@use "./components/navbar";
+
+/* Headline Block
+------------------*/
+@use "./components/headline";
+
+/* Sub Headline (Quality & Service) 
+-----------------------------------*/
+@use "./components/subheadline";
+
+/* Video Advertisement Block
+-----------------------------*/
+@use "./components/videoblock.scss";
+
+/* Stylist Block
+-----------------*/
+@use "./components/stylistblock";
+
+/* Colouring Offer Block
+-------------------------*/
+@use "./components/colouroffer";
+
+/* Lookbook Photo Grid
+-----------------------*/
+@use "./components/lookbookgrid";
+
+/* Footer
+----------*/
+@use "./components/footer";

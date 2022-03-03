@@ -1,0 +1,34 @@
+.our-stylists {
+    /* Layout */
+    display: flow-root;
+    text-align: center;
+
+    .our-stylist-block {
+        /* Layout */
+        display: inline-block;
+        max-width: 24vw;
+        padding: 8rem 4rem;
+
+        img {
+            /* Layout */
+            max-width: 100%;
+        }
+    }
+    .stylistinfo {
+        display: inline-block;
+        color: white;
+        background-color: black;
+        padding: 1.2rem 3vw;
+        transform: translateY(-3rem);
+    }
+    h4 {
+        /* Typography */
+        font-size: .8vw;
+        font-weight: 400;
+        padding-bottom: 0.75rem;
+    }
+    p {
+        /* Typography */
+        font-size: .6vw;
+    }
+}
